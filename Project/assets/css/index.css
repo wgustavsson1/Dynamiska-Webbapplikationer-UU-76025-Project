@@ -3,6 +3,7 @@ body
     background-color: rgb(50, 50, 50);
     color:white;
     font-size: 1.2em;
+    font-family: 'EB Garamond', serif;
 }
 main
 {
@@ -13,9 +14,39 @@ main
 {
     text-align: center;
 }
+#search-form input
+{
+    background-color: rgb(111, 207, 111);
+    border:none;
+    color:white;
+    border-radius: 1em;
+    height: 5vh;
+    padding:0.5vw;
+    width: 50vw;
+    font-size:1.5em;
+}
+#search-form button
+{
+    background-color: rgb(46, 46, 46);
+    color:white;
+    margin-top:1vh;
+    width: 10vw;
+    height:5vh;
+    border-radius: 1em;
+    font-size:1.5em;
+}
+
+#search-result
+{
+    width: 100vw;
+    padding:2vw;
+    margin-top:2vh;
+    background-color: rgb(140, 196, 140);
+}
 
 #search-result ul
 {
+    display: inline;
     width: 50vw;
     margin:0 auto;
     list-style: none;
@@ -31,12 +62,13 @@ main
 }
 #search-result ul li:hover 
 {
-    font-size: 3em;
+    font-size: 2.5em;
     color:black;
 }
 #contents
 {
     clear:both;
+    
 }
 #contents ul
 {
@@ -51,8 +83,9 @@ main
     margin-right: 5vw;
     padding:1vw;
     border-radius: 1vw;
-    background-color: rgb(140, 196, 140);
-    color:rgb(44, 44, 44);
+    box-shadow: 10px 5px 5px rgb(56, 56, 56);
+    background-color: rgb(28, 28, 28);
+    color:rgb(197, 197, 197);
 }
 #contents ul li
 {
