@@ -20,15 +20,65 @@ function find_food(sentence)
     });
 }
 
+/*When food is clicked then check which element was klicked and extract food name from that element
+ and find matching <ul> to display using style.visibility */ 
+function food_clicked(e)
+{
+    const clicked_element = e.srcElement;
+    const food_name = clicked_element.innerHTML;
+    console.log("klicked " + food_name)
+    const contents = document.getElementById("contents")
+    for(var child in contents.childNodes)
+    {
+        const element = contents.childNodes[child]
+        if(element.nodeName == "UL")
+        {
+            const list_items = element.childNodes;
+            const list_item_name = list_items[0]
+            const name = list_item_name.firstChild.innerHTML;
+            console.log(name)
+            if(name == food_name)
+            {
+                const visibility = element.style.visibility;
+                if(visibility == "hidden") element.style.visibility = "visible"
+                else element.style.visibility = "hidden"
+            }
+        }
+    }
+}
+
 function display_food(food)
 {
     const result = document.getElementById("search-result-ul")
-    console.log(food)
+    result.innerHTML = ""; //Clear previous result
+    const contents = document.getElementById("contents")
+    contents.innerHTML = ""//Clear previous result
     console.log(food)
     food.forEach(f => {
         const new_li = document.createElement("li");
         new_li.innerHTML = f.name;
+        new_li.addEventListener("click",food_clicked)
         result.append(new_li)
-        console.log(f)
+        
+        const new_ul = document.createElement("ul");
+        contents.append(new_ul);
+        //Create UL for every food containing nutrition
+        for(var key in f)
+        {
+            var new_content_li = document.createElement("li");
+            if(key == 'name')
+            {
+                var name_h4 = document.createElement("h4");
+                name_h4.innerHTML = f[key]
+                new_content_li.append(name_h4)
+            }
+            else
+            {
+                new_content_li.innerHTML = key + ": " + f[key];
+            }
+            new_ul.append(new_content_li);
+            new_ul.style.visibility = "hidden"
+        }
     });
+
 }

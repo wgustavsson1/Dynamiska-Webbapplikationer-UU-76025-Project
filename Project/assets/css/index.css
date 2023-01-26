@@ -1,6 +1,7 @@
 body
 {
     background-color: rgb(50, 50, 50);
+    color:white;
 }
 main
 {
@@ -10,4 +11,48 @@ main
 #search-form
 {
     text-align: center;
+}
+
+#search-result ul
+{
+    width: 50vw;
+    margin:0 auto;
+    list-style: none;
+}
+#search-result ul li
+{
+    color:white;
+    font-size:2em;
+    text-decoration: underline green;
+    float:left;
+    margin-bottom: 1vh;
+    margin-left: 2vw;
+}
+#search-result ul li:hover 
+{
+    color:black
+}
+#contents
+{
+    clear:both;
+}
+#contents ul
+{
+    list-style-type: none;
+    font-size: 1.5em;
+}
+#contents ul
+{
+    text-align: center;
+    float:left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding:1vw;
+    border-radius: 1vw;
+    background-color: rgb(140, 196, 140);
+    color:rgb(44, 44, 44);
+}
+#contents ul li
+{
+    margin-bottom:0.5vh;
 }
