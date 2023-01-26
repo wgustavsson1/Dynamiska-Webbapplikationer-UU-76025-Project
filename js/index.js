@@ -39,9 +39,17 @@ function food_clicked(e)
             console.log(name)
             if(name == food_name)
             {
-                const visibility = element.style.visibility;
-                if(visibility == "hidden") element.style.visibility = "visible"
-                else element.style.visibility = "hidden"
+
+                const display = element.style.display;
+                if(display == "none") element.style.display = "block"
+                else element.style.display = "none"
+
+                const clicked_element_color = clicked_element.style.color;
+                if(clicked_element_color != "orange") clicked_element.style.color = "orange";
+                else clicked_element.style.color = "white";
+
+                contents.removeChild(element);
+                contents.insertBefore(element,contents.childNodes[0])
             }
         }
     }
@@ -77,7 +85,7 @@ function display_food(food)
                 new_content_li.innerHTML = key + ": " + f[key];
             }
             new_ul.append(new_content_li);
-            new_ul.style.visibility = "hidden"
+            new_ul.style.display = "none"
         }
     });
 

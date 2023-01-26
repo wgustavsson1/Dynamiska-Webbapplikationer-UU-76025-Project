@@ -2,6 +2,7 @@ body
 {
     background-color: rgb(50, 50, 50);
     color:white;
+    font-size: 1.2em;
 }
 main
 {
@@ -30,7 +31,8 @@ main
 }
 #search-result ul li:hover 
 {
-    color:black
+    font-size: 3em;
+    color:black;
 }
 #contents
 {
