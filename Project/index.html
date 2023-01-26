@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
-	<title>Mat</title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="assets/css/index.css" />
-	<script type="module" src="../js/index.js"></script>
+	<head>
+		<title>Idag har jag ätit</title>
+		<meta charset="utf-8" />
+		<script type="module" src="../js/index.js"></script>
+		<link rel="stylesheet" href="assets/css/index.css" />
 </head>
 
 <body>
 	<header>
+		
 	</header>
-
+	
 	<nav>
 		<ul>
 		</ul>
 	</nav>
-	
+
 	<main>
+		<section>
+			<h1>Skriv in vad du har ätit den senaste tiden</h1>
+			<h2>Exempelvis:</h2>
+			<h3>"Idag har jag ätit vetebröd med ost och youghurt, rostbiff med potatissallad och linssoppa</h3>
+		</section>
+		<form id = "search-form" action="javascript:void(0);">
+			<label for="search">Sök</label>
+			<input name="search" id="input-search"/>
+			<br>
+			<button type="submit" id = "search-form-submit-button">Sök</button>
+		</form>
+		<div id = "search-result">
+			<ul id = "search-result-ul">
+				
+			</ul>	
+		</div>
+		
 	</main>
 
-	<footer>
+<footer>
 	
-	</footer>
+</footer>
 </body>
-
 </html>

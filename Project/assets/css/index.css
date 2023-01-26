@@ -1,0 +1,13 @@
+body
+{
+    background-color: rgb(50, 50, 50);
+}
+main
+{
+    text-align: center;
+    background-color: rgb(96, 96, 96);
+}
+#search-form
+{
+    text-align: center;
+}
