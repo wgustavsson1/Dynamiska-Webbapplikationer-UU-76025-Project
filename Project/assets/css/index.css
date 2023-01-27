@@ -12,7 +12,7 @@ main
 }
 #search-form
 {
-    text-align: center;
+    text-align: inherit;
 }
 #search-form input
 {
