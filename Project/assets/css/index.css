@@ -36,6 +36,18 @@ body
     font-size: 1.2em;
     font-family: 'EB Garamond', serif;
 }
+a
+{
+    text-decoration: none;
+}
+a
+{
+    color :rgb(75, 191, 75);
+}
+a:hover
+{
+    color: rgb(19, 199, 19);
+}
 nav
 {
     position:fixed;
