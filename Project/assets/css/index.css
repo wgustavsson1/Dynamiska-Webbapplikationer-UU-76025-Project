@@ -1,19 +1,19 @@
-@media  (min-width: 100px) and (max-width: 600px)
+@media  (min-width: 100px) and (max-width: 1000px)
 {
     nav img
     {
         display: block;
     }
-    nav ul
-    {
-        display: none;
-    }
     nav
     {
         height:10vh;
     }
+    nav ul
+    {
+        display: none;
+    }
 }
-@media (min-width: 600px) and (max-width: 5000px)
+@media (min-width: 1000px) and (max-width: 5000px)
 {
     nav
     {
