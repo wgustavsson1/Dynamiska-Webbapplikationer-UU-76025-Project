@@ -1,2 +1,4 @@
 1: Design och designspecifikation
+Kolla så att alla färger stämmer med färgpaletten
 2: Fixa så att objektorientering används
+3:Lägg till header elementet på layoutbilderna i designspecifikationen

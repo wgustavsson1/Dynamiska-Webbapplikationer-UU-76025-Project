@@ -31,7 +31,7 @@
 
 body
 {
-    background-color: rgb(50, 50, 50);
+    background-color: #323232;
     color:white;
     font-size: 1.2em;
     font-family: 'EB Garamond', serif;
@@ -43,18 +43,18 @@ a
 }
 a
 {
-    color :rgb(75, 191, 75);
+    color: #6FCF97;
 }
 a:hover
 {
-    color: rgb(19, 199, 19);
+    color: #F4B942;
 }
 header
 {
     text-align: center;
-    background-color: rgb(25, 25, 25);
+    background-color:#191919;
     padding: 1vw;
-    box-shadow: inset 5px 5px 5px rgb(125, 125, 125);
+    box-shadow: inset 5px 5px 5px #7D7D7D;
 }
 
 nav
@@ -65,8 +65,8 @@ nav
     width: 15vw;
     font-size:2em;
     color:rgb(83, 82, 82);
-    box-shadow: inset 5px 5px 5px rgb(125, 125, 125);
-    background-color: rgb(25, 25, 25);
+    box-shadow: inset 5px 5px 5px #7D7D7D;
+    background-color: #191919;
 }
 nav img
 {
@@ -96,8 +96,9 @@ main
     margin-top:5vh;
     padding:1vw;
     text-align: center;
-    background-color: rgb(96, 96, 96);
-    box-shadow: inset 30px 30px 30px rgb(40, 40, 40);
+    box-shadow: inset 5px 5px 5px rgb(125, 125, 125);
+    background-color: #191919;
+    
 }
 #search-form
 {
@@ -105,7 +106,7 @@ main
 }
 #search-form input
 {
-    background-color: rgb(111, 207, 111);
+    background-color: #6FCF97;
     border:none;
     color:white;
     border-radius: 1em;
@@ -116,8 +117,8 @@ main
 }
 #search-form button
 {
-    background-color: rgb(46, 46, 46);
-    color:white;
+    background-color: none;
+    color: #F4B942;
     margin-top:1vh;
     width: 10vw;
     height:5vh;
@@ -128,8 +129,10 @@ main
 #search-result
 {
     padding:2vw;
+    margin-left:5vw;
+    margin-right: 5vw;
     margin-top:2vh;
-    background-color: rgb(140, 196, 140);
+    background-color: rgb(50, 50, 50);
 }
 
 #search-result ul
@@ -143,7 +146,7 @@ main
 {
     color:white;
     font-size:2em;
-    text-decoration: underline green;
+    text-decoration: underline #6FCF97;
     float:left;
     margin-bottom: 1vh;
     margin-left: 2vw;
