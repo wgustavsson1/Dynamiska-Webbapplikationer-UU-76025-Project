@@ -1,0 +1,2 @@
+1: Design och designspecifikation
+2: Fixa så att objektorientering används
