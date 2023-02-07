@@ -1,7 +1,7 @@
 import {getTranslation,getFoodData,test} from './api.js';
 
-const marked_color_hex = "#F4B942";
-const marked_color_rgb = "rgb(244, 185, 66)";
+const MARKED_COLOR_HEX = "#F4B942";
+const MARKED_COLOR_RGB = "rgb(244, 185, 66)";
 var foods = [];
 
 var submit_button = document.getElementById("search-form-submit-button");
@@ -41,8 +41,8 @@ function food_clicked(e)
             else element.style.display = "none"
 
             const clicked_element_color = clicked_element.style.color;
-            if(clicked_element_color != marked_color_hex && clicked_element_color != marked_color_rgb) 
-                clicked_element.style.color = marked_color_hex;
+            if(clicked_element_color != MARKED_COLOR_HEX && clicked_element_color != MARKED_COLOR_RGB) 
+                clicked_element.style.color = MARKED_COLOR_HEX;
             else clicked_element.style.color = "white";
 
             contents.removeChild(element);
@@ -79,76 +79,20 @@ function display_food(food)
 
 function create_food_ul(food)
 {
+    var new_food_li = document.createElement("li");
+    var name_h4 = document.createElement("h4");
+    name_h4.innerHTML = food.name;
+    new_food_li.append(name_h4);
+    food.element.append(new_food_li);
+    food.element.style.display = "none"
+
+    for(var key in food.nutrition)
+    {
         var new_food_li = document.createElement("li");
-        var name_h4 = document.createElement("h4");
-        name_h4.innerHTML = food.name;
-        new_food_li.append(name_h4);
+        new_food_li.innerHTML = food.nutrition[key].desc + " : " + food.nutrition[key].value;
         food.element.append(new_food_li);
         food.element.style.display = "none"
-
-        
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Kalorier: " + food.calories;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
-
-        
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Serveringsstorlek: : " + food.serving_size;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
-
-        
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Fett totalt: : " + food.fat_total;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
-
-        
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Mättat fett: : " + food.fat_saturated;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
-
-        
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Protein: : " + food.protein;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
-
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Sodium: : " + food.sodium;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
-
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Potassium: : " + food.potassium;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
-
-        
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Kolestrol: : " + food.cholestrol;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
-
-        
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Kolhydrater: : " + food.carbs;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
-
-        
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Fiber: : " + food.fiber;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
-
-        
-        new_food_li = document.createElement("li");
-        new_food_li.innerHTML = "Socker : " + food.sugar;
-        food.element.append(new_food_li);
-        food.element.style.display = "none"
+    }
 }
 
 class Food
@@ -168,5 +112,18 @@ class Food
         this.carbs = carbs;
         this.fiber = fiber;
         this.sugar = sugar;
+
+        this.nutrition = {};
+        this.nutrition["serving_size"] = {desc:"Portionsstorlek (g)",value:this.serving_size};
+        this.nutrition["calories"] = {desc:"Kalorier (Kcal)",value:this.calories};
+        this.nutrition["fat_total"] = {desc:"Fett totalt (g)",value:this.fat_total};
+        this.nutrition["fat_saturated"] = {desc:"Mättat fett (g)",value:this.fat_saturated};
+        this.nutrition["carbs"] = {desc:"Kolhydrater (g)",value:this.carbs};
+        this.nutrition["protein"] = {desc:"Protein (g)",value:this.protein};
+        this.nutrition["cholestrol"] = {desc:"Kolestrol (mg)",value:this.cholestrol};
+        this.nutrition["sodium"] = {desc:"Natrium (mg)",value:this.sodium};
+        this.nutrition["potassium"] = {desc:"Kalium (mg)",value:this.potassium};
+        this.nutrition["fiber"] = {desc:"Fiber (g)",value:this.fiber};
+        this.nutrition["sugar"] = {desc:"Socker (g)",value:this.sugar};
     }
 }
