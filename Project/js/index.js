@@ -31,7 +31,6 @@ function food_clicked(e)
     const food_name = clicked_element.innerHTML;
     const contents = document.getElementById("contents")
 
-    console.log("klicked " + food_name)
     foods.forEach(food => {
         if(food.name == food_name)
         {
@@ -57,7 +56,6 @@ function display_food(food)
     result.innerHTML = ""; //Clear previous result
     const contents = document.getElementById("contents")
     contents.innerHTML = ""//Clear previous result
-    console.log(food)
     food.forEach(f => {
         
         const new_li = document.createElement("li");
@@ -71,7 +69,6 @@ function display_food(food)
         const new_food = new Food(new_ul,f.name,f.calories,f.serving_size_g,f.fat_total_g,f.fat_saturated_g,f.protein_g,
             f.sodium_mg,f.potassium_mg,f.cholesterol_mg,f.carbohydrates_total_g,f.fiber_g,f.sugar_g)
         foods.push(new_food);
-        console.log(new_food);
 
         create_food_ul(new_food);
     });
