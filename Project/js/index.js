@@ -2,6 +2,7 @@ import {getTranslation,getFoodData,test} from './api.js';
 
 const MARKED_COLOR_HEX = "#F4B942";
 const MARKED_COLOR_RGB = "rgb(244, 185, 66)";
+const UNMARKED_COLOR_HEX = "#6FCF97";
 var foods = [];
 
 var submit_button = document.getElementById("search-form-submit-button");
@@ -42,7 +43,7 @@ function food_clicked(e)
             const clicked_element_color = clicked_element.style.color;
             if(clicked_element_color != MARKED_COLOR_HEX && clicked_element_color != MARKED_COLOR_RGB) 
                 clicked_element.style.color = MARKED_COLOR_HEX;
-            else clicked_element.style.color = "white";
+            else clicked_element.style.color = UNMARKED_COLOR_HEX;
 
             contents.removeChild(element);
             contents.insertBefore(element,contents.childNodes[0])

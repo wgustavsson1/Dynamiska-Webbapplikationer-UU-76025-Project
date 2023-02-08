@@ -1,3 +1,4 @@
-1: Design och designspecifikation
+Design och designspecifikation
 Kolla så att alla färger stämmer med färgpaletten
-3:Lägg till header elementet på layoutbilderna i designspecifikationen
+Lägg till header elementet på layoutbilderna i designspecifikationen
+Fortsätt på media queries
