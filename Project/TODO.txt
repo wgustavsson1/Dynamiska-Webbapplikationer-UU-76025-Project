@@ -1,4 +1,7 @@
-Design och designspecifikation
-Kolla så att alla färger stämmer med färgpaletten
 Lägg till header elementet på layoutbilderna i designspecifikationen
+Design och designspecifikation
 Fortsätt på media queries
+Lägg till HTML organisatoriska element
+Validera HTML och CSS
+Driftsätt sajten
+Spela in demo

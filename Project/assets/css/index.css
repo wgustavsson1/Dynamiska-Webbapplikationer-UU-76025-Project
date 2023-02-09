@@ -60,20 +60,20 @@ body
 {
     background-color: #323232;
     color:#7D7D7D;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Merienda', cursive;
 }
 
 img
 {
     border-radius: 2em;
 }
-
-a
+h1,h4
 {
-    text-decoration: none;
+    color: #F4B942;
 }
 a
 {
+    text-decoration: none;
     color: #6FCF97;
 }
 a:hover
@@ -165,9 +165,11 @@ button[type="submit"]
     color:#F4B942;
     border-radius: 0.5em;
     padding: 0.5vw;
+    font-family: 'Merienda', cursive;
 }
 button
 {
+    font-family: 'Merienda', cursive;
     background-color: none;
 }
 #search-form input
@@ -205,7 +207,7 @@ button
 #search-result ul li
 {
     color:#6FCF97;
-    font-size:2em;
+    font-size:1.5em;
     text-decoration: underline #6FCF97;
     float:left;
     margin-bottom: 1vh;
@@ -213,7 +215,7 @@ button
 }
 #search-result ul li:hover 
 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     color:#F4B942;
 }
 #contents
