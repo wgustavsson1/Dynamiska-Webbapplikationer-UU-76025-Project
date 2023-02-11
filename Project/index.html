@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang = "sv">
 	<head>
 		<title>Idag har jag ätit</title>
 		<link rel="icon" type="image/x-icon" href="assets/img/apple.png">
 		<meta charset="utf-8" />
-		<script type="text/javascript" defer src="js/nav.js"></script>
+		<script defer src="js/nav.js"></script>
 		<script type="module" src="js/index.js"></script>
 		<link rel="stylesheet" href="assets/css/index.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,19 +13,19 @@
 		<link rel="stylesheet" href="assets/css/normalize.css">
 </head>
 
-<header>
-	<h1>IdagHarJagÄtit</h1>
-	<h2><i>-Håll koll på vad du stoppar i dig</i></h2>
-</header>
-
 <body>
+	<header>
+		<h1>IdagHarJagÄtit</h1>
+		<h2><i>-Håll koll på vad du stoppar i dig</i></h2>
+	</header>
+
 	<nav id = "nav">
 		<img src = "assets//img/Hamburger_icon.svg.png" id="nav-img" alt="Bild föreställandes tre svarta sträck som ska representera ikonen för en hamburgermeny" />
 		<ul id="nav-ul">
-			<a href="html/help.html"><li>Hjälp</li></a>
-			<a href="html/nutrition.html"><li>Näring</li></a>
-			<a href="html/contact.html"><li>Kontakt</li></a>
-			<a href="index.html"><li>Hem</li></a>
+			<li><a href="html/help.html">Hjälp</a></li>
+			<li><a href="html/nutrition.html">Näring</a></li>
+			<li><a href="html/contact.html">Kontakt</a></li>
+			<li><a href="index.html">Hem</a></li>
 		</ul>
 	</nav>
 
@@ -36,7 +36,7 @@
 			<h3>"Idag har jag ätit <em>vetebröd</em> med <em>ost</em> och <em>youghurt</em>, <em>rostbiff</em> med <em>potatissallad</em> och <em>linssoppa</em>"</h3>
 		</section>
 		<form id = "search-form" action="javascript:void(0);">
-			<label for="search">Sök</label>
+			<label for="input-search">Sök</label>
 			<input name="search" type="text" id="input-search"/>
 			<br>
 			<button type="submit" id = "search-form-submit-button">Sök</button>
@@ -48,8 +48,5 @@
 		<div id = "contents"></div>
 		
 	</main>
-<footer>
-	
-</footer>
 </body>
 </html>
