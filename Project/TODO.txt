@@ -1,4 +1,2 @@
-Validera CSS
-CSS genvägar
 Testa tillgänglighet
 Spela in demo

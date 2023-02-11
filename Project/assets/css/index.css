@@ -123,8 +123,7 @@ nav li:hover
 main
 {
     width: 60vw;
-    margin-left: 19vw;
-    margin-top:5vh;
+    margin:5vh 0vw 0vh 19vw;
     padding:1vw;
     text-align: center;
     box-shadow: inset 5px 5px 5px rgb(125, 125, 125);
@@ -191,9 +190,7 @@ button
 #search-result
 {
     padding:2vw;
-    margin-left:5vw;
-    margin-right: 5vw;
-    margin-top:2vh;
+    margin:2vh 5vw 0vh 5vw;
     background-color: rgb(50, 50, 50);
 }
 
@@ -210,8 +207,7 @@ button
     font-size:1.5em;
     text-decoration: underline #6FCF97;
     float:left;
-    margin-bottom: 1vh;
-    margin-left: 2vw;
+    margin:1vh 0vh 0vh 2vw;
 }
 #search-result ul li:hover 
 {
