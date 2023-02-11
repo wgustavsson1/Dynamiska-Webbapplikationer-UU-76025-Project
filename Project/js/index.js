@@ -20,7 +20,7 @@ function find_food(sentence)
         const translated_text = translated.translated_text
 
         //TODO: Change back to translated_text when API is online again
-        getFoodData("mushrooms and ham and cheese and bread").then(function(food){
+        getFoodData(sentence).then(function(food){
             display_food(food);
         });
     });
@@ -57,6 +57,7 @@ function display_food(food)
     result.innerHTML = ""; //Clear previous result
     const contents = document.getElementById("contents")
     contents.innerHTML = ""//Clear previous result
+    foods = []; //Clear foods list
     food.forEach(f => {
         
         const new_li = document.createElement("li");
