@@ -1,4 +1,4 @@
-Design och designspecifikation
-Validera HTML och CSS
-Driftsätt sajten
+Validera CSS
+CSS genvägar
+Testa tillgänglighet
 Spela in demo

@@ -154,14 +154,14 @@ textarea
 }
 input[type="submit"]
 {
-    background-color: none;
+    background-color: rgb(125, 125, 125);
     color:#F4B942;
     border-radius: 0.5em;
     padding: 0.5vw;
 }
 button[type="submit"]
 {
-    background-color: none;
+    background-color: rgb(125, 125, 125);
     color:#F4B942;
     border-radius: 0.5em;
     padding: 0.5vw;
@@ -170,7 +170,7 @@ button[type="submit"]
 button
 {
     font-family: 'Merienda', cursive;
-    background-color: none;
+    background-color: rgb(125, 125, 125);
 }
 #search-form input
 {
@@ -234,7 +234,7 @@ button
     border-radius: 1vw;
     box-shadow: 10px 5px 5px rgb(56, 56, 56);
     background-color: rgb(28, 28, 28);
-    color:rgb(197, 197, 197);
+    color:rgb(125, 125, 125);
 }
 #contents ul li
 {
