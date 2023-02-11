@@ -20,7 +20,7 @@ function find_food(sentence)
         const translated_text = translated.translated_text
 
         //TODO: Change back to translated_text when API is online again
-        getFoodData(sentence).then(function(food){
+        getFoodData(translated_text).then(function(food){
             display_food(food);
         });
     });
