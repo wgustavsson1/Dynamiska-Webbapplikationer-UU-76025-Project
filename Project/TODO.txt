@@ -2,3 +2,4 @@ Vänta på att API:et translo börjar funka igen
 Kolla så allt funkar
 Skicka in
 Länk till demo: https://www.youtube.com/wagitch?v=ksTNJzpSpCs
+Länk till host: https://spiffy-sprinkles-5e74ac.netlify.app/
